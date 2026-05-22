@@ -17,6 +17,8 @@ source:
 
 build:
   number: 1
+  # Missing onnxruntime builds
+  skip: (osx and x86_64 and py>=314)
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }} -m pip install . -vv
