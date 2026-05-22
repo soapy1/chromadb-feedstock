@@ -107,12 +107,6 @@ description = "Build chromadb-feedstock with variant osx_64_python3.13.____cp313
 [tasks."inspect-osx_64_python3.13.____cp313"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_python3.13.____cp313.yaml"
 description = "List contents of chromadb-feedstock packages built for variant osx_64_python3.13.____cp313"
-[tasks."build-osx_64_python3.14.____cp314"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_python3.14.____cp314.yaml"
-description = "Build chromadb-feedstock with variant osx_64_python3.14.____cp314 directly (without setup scripts)"
-[tasks."inspect-osx_64_python3.14.____cp314"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_python3.14.____cp314.yaml"
-description = "List contents of chromadb-feedstock packages built for variant osx_64_python3.14.____cp314"
 [tasks."build-osx_arm64_python3.10.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_python3.10.____cpython.yaml"
 description = "Build chromadb-feedstock with variant osx_arm64_python3.10.____cpython directly (without setup scripts)"
